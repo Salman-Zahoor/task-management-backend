@@ -13,13 +13,14 @@ let RedisService = class RedisService {
     client;
     async onModuleInit() {
         this.client = (0, redis_1.createClient)({
-            socket: {
-                host: process.env.REDIS_HOST,
-                port: parseInt(process.env.REDIS_PORT || '6379', 10),
-            },
+            url: process.env.REDIS_URL,
         });
-        this.client.on('error', (err) => console.error('Redis error:', err));
+        this.client.on("error", (err) => console.error("Redis error:", err));
         await this.client.connect();
+        console.log("Connected to Redis");
+    }
+    async onModuleDestroy() {
+        await this.client.quit();
     }
     async set(key, value, ttlSeconds) {
         await this.client.set(key, value);
