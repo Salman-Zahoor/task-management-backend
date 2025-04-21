@@ -1,0 +1,1 @@
+{"version":3,"file":"update-task.dto.js","sourceRoot":"","sources":["../../../../src/task/dto/update-task.dto.ts"],"names":[],"mappings":";;;;;;;;;;;;AACA,qDAA+D;AAE/D,MAAa,aAAa;IAGxB,MAAM,CAAU;IAIhB,UAAU,CAAU;CACrB;AARD,sCAQC;AALC;IAFC,IAAA,4BAAU,GAAE;IACZ,IAAA,wBAAM,EAAC,CAAC,SAAS,EAAE,aAAa,EAAE,WAAW,CAAC,CAAC;;6CAChC;AAIhB;IAFC,IAAA,4BAAU,GAAE;IACZ,IAAA,0BAAQ,GAAE;;iDACS"}
